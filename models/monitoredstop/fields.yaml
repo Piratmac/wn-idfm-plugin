@@ -1,0 +1,30 @@
+fields:
+    label:
+        label: 'piratmac.idfm::lang.monitoredstop.label'
+        span: full
+        type: text
+    line:
+        label: 'piratmac.idfm::lang.line.name'
+        nameFrom: name
+        descriptionFrom: ''
+        list: $/piratmac/idfm/models/line/columns.yaml
+        span: auto
+        type: recordfinder
+        keyFrom: id
+    stop:
+        label: 'piratmac.idfm::lang.stop.name'
+        nameFrom: name
+        descriptionFrom: ''
+        list: $/piratmac/idfm/models/stop/columns.yaml
+        span: auto
+        required: 1
+        type: dropdown
+        sortBy: name
+        dependsOn: line
+    ignored_destinations:
+        label: 'piratmac.idfm::lang.monitoredstop.ignored_destinations'
+        nameFrom: name
+        sortBy: name
+        span: auto
+        type: checkboxlist
+        dependsOn: line

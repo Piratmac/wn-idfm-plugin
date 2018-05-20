@@ -1,0 +1,5 @@
+title: MonitoredStop
+modelClass: Piratmac\Idfm\Models\MonitoredStop
+nameFrom: label
+toolbar:
+    buttons: reorder_toolbar

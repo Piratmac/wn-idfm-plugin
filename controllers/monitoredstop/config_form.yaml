@@ -1,0 +1,11 @@
+name: MonitoredStop
+modelClass: Piratmac\Idfm\Models\MonitoredStop
+form: $/piratmac/idfm/models/monitoredstop/fields.yaml
+defaultRedirect: piratmac/idfm/monitoredstop
+create:
+    redirect: 'piratmac/idfm/monitoredstop/update/:monitored_stop_id'
+    redirectClose: piratmac/idfm/monitoredstop
+update:
+    redirect: piratmac/idfm/monitoredstop
+    redirectClose: piratmac/idfm/monitoredstop
+preview: {  }

@@ -1,0 +1,11 @@
+title: Visits
+modelClass: Piratmac\Idfm\Models\Visit
+list: $/piratmac/idfm/models/visit/columns.yaml
+filter: $/piratmac/idfm/models/visit/config_filter.yaml
+noRecordsMessage: 'backend::lang.list.no_records'
+recordsPerPage: 20
+showSetup: true
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'

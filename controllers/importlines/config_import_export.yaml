@@ -1,0 +1,9 @@
+# ===================================
+#  Import/Export Behavior Config
+# ===================================
+
+import:
+    title: 'piratmac.idfm::lang.menu.import_lines'
+    modelClass: Piratmac\Idfm\Models\ImportLine
+    list: $/piratmac/idfm/models/importline/columns.yaml
+    redirect: piratmac/idfm/lines

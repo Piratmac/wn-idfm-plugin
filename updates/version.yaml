@@ -1,0 +1,26 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table piratmac_idfm_stops_raw'
+    - builder_table_create_piratmac_idfm_stops_raw.php
+1.0.3:
+    - 'Created table piratmac_idfm_lines_raw'
+    - builder_table_create_piratmac_idfm_lines_raw.php
+1.0.4:
+    - 'Created view piratmac_idfm_stops'
+    - builder_view_create_piratmac_idfm_stops.php
+1.0.5:
+    - 'Created view piratmac_idfm_lines'
+    - builder_view_create_piratmac_idfm_lines.php
+1.0.6:
+    - 'Created table piratmac_idfm_monitored_stop'
+    - builder_table_create_piratmac_idfm_monitored_stop.php
+1.0.7:
+    - 'Created table piratmac_idfm_monitored_stop_ignore'
+    - builder_table_create_piratmac_idfm_monitored_stop_ignore.php
+1.0.8:
+    - 'Created table piratmac_idfm_visits'
+    - builder_table_create_piratmac_idfm_visits.php
+1.0.9:
+    - 'Added timezone support'
+    - builder_table_update_users_add_time_zone.php

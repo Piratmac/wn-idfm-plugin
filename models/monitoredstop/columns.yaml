@@ -1,0 +1,24 @@
+columns:
+    label:
+        label: 'piratmac.idfm::lang.monitoredstop.label'
+        type: text
+    line:
+        label: 'piratmac.idfm::lang.line.name'
+        type: text
+        select: name
+        relation: line
+    stop:
+        label: 'piratmac.idfm::lang.stop.name'
+        type: text
+        select: name
+        keyFrom: id
+        relation: stop
+    ignored_destination:
+        label: 'piratmac.idfm::lang.monitoredstop.ignored_destinations'
+        type: text
+        relation: ignored_destinations
+        select: name
+    sort_order:
+        label: sort_order
+        type: number
+        invisible: true

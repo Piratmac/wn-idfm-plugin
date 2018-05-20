@@ -1,0 +1,44 @@
+plugin:
+    name: 'piratmac.idfm::lang.plugin.name'
+    description: 'piratmac.idfm::lang.plugin.description'
+    author: Piratmac
+    icon: oc-icon-train
+    homepage: ''
+navigation:
+    IDFM:
+        label: 'piratmac.idfm::lang.menu.IDFM'
+        url: piratmac/idfm/stops
+        icon: icon-train
+        sideMenu:
+            lines:
+                label: 'piratmac.idfm::lang.menu.lines'
+                url: piratmac/idfm/lines
+                icon: icon-random
+            stops:
+                label: 'piratmac.idfm::lang.menu.stops'
+                url: piratmac/idfm/stops
+                icon: icon-pause
+            monitored_stop:
+                label: 'piratmac.idfm::lang.menu.monitoredstop'
+                url: piratmac/idfm/monitoredstop
+                icon: icon-thumb-tack
+            visits:
+                label: 'piratmac.idfm::lang.menu.visits'
+                url: piratmac/idfm/visits
+                icon: icon-sitemap
+            import_stops:
+                label: 'piratmac.idfm::lang.menu.import_stops'
+                url: piratmac/idfm/importstops/import
+                icon: icon-upload
+                attributes:
+                    - 'style="display:none;"'
+            import_lines:
+                label: 'piratmac.idfm::lang.menu.import_lines'
+                url: piratmac/idfm/importlines/import
+                icon: icon-upload
+                attributes:
+                    - 'style="display:none;"'
+            import:
+                label: 'piratmac.idfm::lang.menu.import'
+                url: piratmac/idfm/importstops
+                icon: icon-upload

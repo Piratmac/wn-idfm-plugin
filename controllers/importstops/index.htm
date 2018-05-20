@@ -1,0 +1,21 @@
+<div class="form-group">
+  <div class="field-section">
+    <h4>
+      <?= e(trans('piratmac.idfm::lang.menu.import_choice')) ?>
+    </h4>
+  </div>
+</div>
+<div data-control="toolbar form-group">
+   <button
+        class="btn btn-primary oc-icon-random"
+        data-request="onRedirect"
+        data-request-data="target: 'importstops'">
+        <?= e(trans('piratmac.idfm::lang.menu.import_stops')) ?>
+    </button>
+   <button
+        class="btn btn-primary oc-icon-pause"
+        data-request="onRedirect"
+        data-request-data="target: 'importlines'">
+        <?= e(trans('piratmac.idfm::lang.menu.import_lines')) ?>
+    </button>
+</div>

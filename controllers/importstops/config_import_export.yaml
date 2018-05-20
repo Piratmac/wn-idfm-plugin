@@ -1,0 +1,9 @@
+# ===================================
+#  Import/Export Behavior Config
+# ===================================
+
+import:
+    title: 'piratmac.idfm::lang.menu.import_stops'
+    modelClass: Piratmac\Idfm\Models\ImportStop
+    list: $/piratmac/idfm/models/importstop/columns.yaml
+    redirect: piratmac/idfm/stops

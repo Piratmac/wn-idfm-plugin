@@ -1,0 +1,6 @@
+scopes:
+    recent_only:
+        label: 'piratmac.idfm::lang.visit.display_recent_only'
+        type: checkbox
+        default: 1
+        scope: recentOnly

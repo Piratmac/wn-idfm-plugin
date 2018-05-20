@@ -1,0 +1,37 @@
+columns:
+    ID_Line:
+        label: ID_Line
+        type: text
+    ExternalCode_Line:
+        label: ExternalCode_Line
+        type: text
+    Name_Line:
+        label: Name_Line
+        type: text
+    ShortName_Line:
+        label: ShortName_Line
+        type: text
+    TransportMode:
+        label: TransportMode
+        type: text
+    TransportSubmode:
+        label: TransportSubmode
+        type: text
+    OperatorRef:
+        label: OperatorRef
+        type: text
+    OperatorName:
+        label: OperatorName
+        type: text
+    NetworkRef:
+        label: NetworkRef
+        type: text
+    NetworkName:
+        label: NetworkName
+        type: text
+    ID_GroupOfLines:
+        label: ID_GroupOfLines
+        type: text
+    ShortName_GroupOfLines:
+        label: ShortName_GroupOfLines
+        type: text

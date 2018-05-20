@@ -1,0 +1,33 @@
+<div class="row text-center">
+  {% for monitored_stop in __SELF__.monitored_stops %}
+  <div class="col-xs-12 col-sm-6 col-md-3 col-centered text-left monitored_stop">
+    <h3>{{ monitored_stop.label }}</h3>
+
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>
+            {{ 'piratmac.idfm::lang.visit.destination' | trans }}
+          </th>
+          <th>
+            {{ 'piratmac.idfm::lang.visit.departure_time' | trans }}
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for visit in monitored_stop.visits %}
+        <tr {{ visit.at_stop ? 'class="info"' : '' }} {{ visit.error_message != '' ? 'class="warning"' : '' }}>
+          <td>
+            {{ visit.destination.name }}
+          </td>
+          <td>
+            {{ visit.error_message == '' ? visit.departure_time|date('H:i') : visit.error_message }}
+            {{ visit.error_message == '' ? '(' ~ visit.departure_time|time_since_short() ~ ')' : '' }}
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  {% endfor %}
+</div>

@@ -1,0 +1,33 @@
+fields:
+    api_key:
+        label: 'piratmac.idfm::lang.settings.api_key'
+        span: full
+        required: 1
+        type: text
+        comment: 'piratmac.idfm::lang.settings.api_key_comment'
+    start_time:
+        label: 'piratmac.idfm::lang.settings.start_time'
+        mode: time
+        span: left
+        default: '07:30:00'
+        required: 1
+        type: datepicker
+        comment: 'piratmac.idfm::lang.settings.start_date_comment'
+    end_time:
+        label: 'piratmac.idfm::lang.settings.end_time'
+        mode: time
+        span: right
+        default: '09:00:00'
+        required: 1
+        type: datepicker
+    displayPastXMinutes:
+        label: 'piratmac.idfm::lang.settings.display_past_x_minutes'
+        span: auto
+        default: 5
+        type: number
+    displayErrorsForXHours:
+        label: 'piratmac.idfm::lang.settings.displayErrorsForXHours'
+        span: auto
+        default: 24
+        type: number
+        comment: 'piratmac.idfm::lang.settings.displayErrorsForXHours_comment'

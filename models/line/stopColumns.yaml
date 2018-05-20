@@ -1,0 +1,12 @@
+columns:
+    idfm_id:
+        label: 'piratmac.idfm::lang.stop.MonitoringRef'
+        type: text
+    id:
+        label: 'piratmac.idfm::lang.stop.ID'
+        type: text
+    name:
+        label: 'piratmac.idfm::lang.stop.name'
+        type: text
+        searchable: true
+        sortable: true

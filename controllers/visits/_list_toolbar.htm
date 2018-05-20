@@ -1,0 +1,16 @@
+<div data-control="toolbar">
+   <button
+        class="btn btn-primary oc-icon-refresh"
+        data-request="onGetVisits"
+        data-request-flash
+        data-stripe-load-indicator>
+        <?= e(trans('piratmac.idfm::lang.visit.update_list')) ?>
+    </button>
+   <button
+        class="btn btn-warning oc-icon-trash"
+        data-request="onCleanUnmonitoredVisits"
+        data-request-flash
+        data-stripe-load-indicator>
+        <?= e(trans('piratmac.idfm::lang.visit.cleanup_unmonitored')) ?>
+    </button>
+</div>

@@ -1,0 +1,31 @@
+columns:
+    visit_id:
+        label: 'piratmac.idfm::lang.visit.id'
+        type: text
+    record_time:
+        label: 'piratmac.idfm::lang.visit.record_time'
+        type: datetime
+    line_id:
+        label: 'piratmac.idfm::lang.line.name'
+        type: text
+        select: name
+        relation: line
+    stop_id:
+        label: 'piratmac.idfm::lang.stop.name'
+        type: text
+        select: name
+        relation: stop
+    destination_id:
+        label: 'piratmac.idfm::lang.visit.destination'
+        type: text
+        select: name
+        relation: destination
+    at_stop:
+        label: 'piratmac.idfm::lang.visit.at_stop'
+        type: switch
+    departure_time:
+        label: 'piratmac.idfm::lang.visit.departure_time'
+        type: time_since_short
+    error_message:
+        label: 'piratmac.idfm::lang.visit.error_message'
+        type: text

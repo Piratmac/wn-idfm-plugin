@@ -1,0 +1,13 @@
+title: Lines
+modelClass: Piratmac\Idfm\Models\Line
+list: $/piratmac/idfm/models/line/columns.yaml
+recordUrl: 'piratmac/idfm/lines/details/:id'
+noRecordsMessage: 'backend::lang.list.no_records'
+recordsPerPage: 20
+defaultSort:
+    column: name
+    direction: asc
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'

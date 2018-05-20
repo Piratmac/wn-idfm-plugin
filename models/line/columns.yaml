@@ -1,0 +1,22 @@
+columns:
+    id:
+        label: 'piratmac.idfm::lang.line.ID'
+        type: text
+        searchable: true
+        sortable: true
+    name:
+        label: 'piratmac.idfm::lang.line.name'
+        type: text
+        searchable: true
+        sortable: true
+    transport_mode:
+        label: 'piratmac.idfm::lang.line.transport_mode'
+        type: text
+        searchable: true
+        sortable: true
+    stops_count:
+        label: 'piratmac.idfm::lang.line.stop_count'
+        type: number
+        sortable: false
+        relation: stops_count
+        valueFrom: count

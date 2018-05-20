@@ -1,0 +1,55 @@
+columns:
+    MonitoringRef_ZDE:
+        label: MonitoringRef_ZDE
+        type: text
+    reflex_lda_id:
+        label: reflex_lda_id
+        type: number
+    reflex_lda_nom:
+        label: reflex_lda_nom
+        type: text
+    reflex_zdl_id:
+        label: reflex_zdl_id
+        type: number
+    reflex_zdl_nom:
+        label: reflex_zdl_nom
+        type: text
+    reflex_zde_id:
+        label: reflex_zde_id
+        type: number
+    reflex_zde_nom:
+        label: reflex_zde_nom
+        type: text
+    gtfs_stop_id:
+        label: gtfs_stop_id
+        type: text
+    Lineref:
+        label: Lineref
+        type: text
+    gtfs_line_name:
+        label: gtfs_line_name
+        type: text
+    codifligne_line_id:
+        label: codifligne_line_id
+        type: text
+    codifligne_line_externalcode:
+        label: codifligne_line_externalcode
+        type: text
+    codifligne_network_name:
+        label: codifligne_network_name
+        type: text
+    gtfs_agency:
+        label: gtfs_agency
+        type: text
+    Dispo:
+        label: Dispo
+        type: number
+    reflex_zde_x:
+        label: reflex_zde_x
+        type: text
+    reflex_zde_y:
+        label: reflex_zde_y
+        type: text
+    xy:
+        label: xy
+        type: text

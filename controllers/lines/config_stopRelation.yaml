@@ -1,0 +1,8 @@
+stops:
+    label: Stops
+    noRecordsMessage: 'backend::lang.list.no_records'
+    view:
+        list: $/piratmac/idfm/models/line/stopColumns.yaml
+        defaultSort:
+            column: name
+            direction: asc
