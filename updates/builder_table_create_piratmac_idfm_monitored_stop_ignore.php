@@ -7,7 +7,7 @@ class BuilderTableCreatePiratmacIdfmMonitoredStopIgnore extends Migration
 {
     public function up()
     {
-        Schema::create('piratmac_idfm_monitored_stop_ignore', function($table)
+        Schema::create('piratmac_idfm_monitored_stop_ignored_destination', function($table)
         {
             $table->engine = 'InnoDB';
             $table->integer('monitored_stop_id')->unsigned();
@@ -18,6 +18,6 @@ class BuilderTableCreatePiratmacIdfmMonitoredStopIgnore extends Migration
 
     public function down()
     {
-        Schema::dropIfExists('piratmac_idfm_monitored_stop_ignore');
+        Schema::dropIfExists('piratmac_idfm_monitored_stop_ignored_destination');
     }
 }
