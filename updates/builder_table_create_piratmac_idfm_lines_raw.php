@@ -22,6 +22,7 @@ class BuilderTableCreatePiratmacIdfmLinesRaw extends Migration
             $table->string('NetworkName', 255)->nullable();
             $table->string('ID_GroupOfLines', 255)->nullable();
             $table->string('ShortName_GroupOfLines', 255)->nullable();
+            $table->boolean('Accessibility');
         });
     }
 

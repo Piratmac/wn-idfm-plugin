@@ -4,14 +4,14 @@
         'description' => 'Soyez à temps pour votre RER, bus, metro, ...',
     ],
     'stop' => [
-        'ID' => 'ID interne de l&apos;arrêt',
-        'name' => 'Nom de l&apos;arrêt',
-        'MonitoringRef' => 'ID IDFM de l&apos;arrêt',
+        'ID' => 'ID interne de l\'arrêt',
+        'name' => 'Nom de l\'arrêt',
+        'MonitoringRef' => 'ID IDFM de l\'arrêt',
     ],
     'line' => [
         'ID' => 'ID de la ligne',
         'name' => 'Nom de ligne',
-        'stop_count' => 'Nombre d&apos;arrêts',
+        'stop_count' => 'Nombre d\'arrêts',
         'transport_mode' => 'Type',
     ],
     'monitoredstop' => [
@@ -61,9 +61,9 @@
         'displayErrorsForXHours_comment' => 'Applicable en cas d&pos;erreurs techniques (script) ou conditions spéciales (grèves, ...)',
     ],
     'import_lines' => [
-        'lines_source' => 'Le CSV est disponible dans le référentiel <a href="https://opendata.stif.info/explore/dataset/referentiel-des-lignes-stif/">Référentiel des lignes de transport en commun d&apos;Ile-de-France</a>',
+        'lines_source' => 'Le CSV est disponible dans le référentiel <a href="https://opendata.stif.info/explore/dataset/referentiel-des-lignes-stif/">Référentiel des lignes de transport en commun d\'Ile-de-France</a>',
     ],
     'import_stops' => [
-        'stops_source' => 'Le CSV est disponible dans le référentiel <a href="https://opendata.stif.info/explore/dataset/perimetre-tr-plateforme-stif/">Périmètre des données temps réel disponibles sur la plateforme d&apos;échanges Île-de-France Mobilités</a>',
+        'stops_source' => 'Le CSV est disponible dans le référentiel <a href="https://opendata.stif.info/explore/dataset/perimetre-tr-plateforme-stif/">Périmètre des données temps réel disponibles sur la plateforme d\'échanges Île-de-France Mobilités</a>',
     ],
 ];
