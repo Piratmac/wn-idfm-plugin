@@ -69,6 +69,3 @@ for monitored_stop_id in monitored_stops:
                         })
 
 idfm_database.set_visits(visits_data)
-
-#print (idfm_database.get_monitored_stops())
-#print (visits_data)

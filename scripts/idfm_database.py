@@ -40,8 +40,6 @@ class Idfm_Database:
       id_type = 'id'
     self.cursor.execute("SELECT id, name, idfm_id FROM piratmac_idfm_stops WHERE " + id_type + " = %s", (stop_id, ))
     result = self.cursor.fetchall()
-    print (stop_id)
-    print (result)
     self.stations_list[stop_id] = {'name': result[0][1], 'idfm_id': result[0][2]}
     self.stations_idfm_to_database[result[0][2]] = result[0][0]
 
