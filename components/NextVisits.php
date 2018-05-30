@@ -47,6 +47,7 @@ class NextVisits extends ComponentBase
         $this->monitored_stops->each(function($monitoredStop, $key) {
           if ($monitoredStop->visits->count() > 0 && $monitoredStop->ignored_destinations->count() > 0) {
             $this->monitored_stops[$key]->visits = $monitoredStop->visits->reject(function ($visit) use ($monitoredStop) {
+              if (!isset($visit->destination) || $visit->destination->count() == 0) return false;
               return in_array($visit->destination->idfm_id, $monitoredStop->ignored_destinations->pluck('idfm_id')->toArray());
             });
           }
