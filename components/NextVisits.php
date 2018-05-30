@@ -43,10 +43,14 @@ class NextVisits extends ComponentBase
         }])
         ->get();
       # This filters the visits according to the ignored destinations
-      $this->monitored_stops->each(function($monitoredStop, $key) {
-        $this->monitored_stops[$key]->visits = $monitoredStop->visits->reject(function ($visit) use ($monitoredStop) {
-          return in_array($visit->destination->idfm_id, $monitoredStop->ignored_destinations->pluck('idfm_id')->toArray());
+      if ($this->monitored_stops->count() > 0) {
+        $this->monitored_stops->each(function($monitoredStop, $key) {
+          if ($monitoredStop->visits->count() > 0 && $monitoredStop->ignored_destinations->count() > 0) {
+            $this->monitored_stops[$key]->visits = $monitoredStop->visits->reject(function ($visit) use ($monitoredStop) {
+              return in_array($visit->destination->idfm_id, $monitoredStop->ignored_destinations->pluck('idfm_id')->toArray());
+            });
+          }
         });
-      });
+      }
     }
 }
