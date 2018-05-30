@@ -35,7 +35,7 @@
         'record_time' => 'Enregistré à',
         'id' => 'ID de la visite',
         'destination' => 'Terminus',
-        'at_stop' => 'A l&pos;arrêt',
+        'at_stop' => 'A l\'arrêt',
         'departure_time' => 'Départ',
         'error_message' => 'Erreur',
         'update_list' => 'Mise à jour',
@@ -58,7 +58,7 @@
         'start_date_comment' => 'La mise à jour aura lieu entre les heures spécifiées.',
         'display_past_x_minutes' => 'Afficher les visites des X dernières minutes',
         'displayErrorsForXHours' => 'Afficher les erreurs pendant X heures',
-        'displayErrorsForXHours_comment' => 'Applicable en cas d&pos;erreurs techniques (script) ou conditions spéciales (grèves, ...)',
+        'displayErrorsForXHours_comment' => 'Applicable en cas d\'erreurs techniques (script) ou conditions spéciales (grèves, ...)',
     ],
     'import_lines' => [
         'lines_source' => 'Le CSV est disponible dans le référentiel <a href="https://opendata.stif.info/explore/dataset/referentiel-des-lignes-stif/">Référentiel des lignes de transport en commun d\'Ile-de-France</a>',
