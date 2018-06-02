@@ -5,6 +5,7 @@ use Piratmac\Idfm\Models\MonitoredStop;
 use Carbon;
 use Piratmac\Idfm\Models\Settings as IDFMSettings;
 use BackendAuth;
+use Config;
 
 class NextVisits extends ComponentBase
 {
@@ -27,7 +28,15 @@ class NextVisits extends ComponentBase
 
   public function onRun () {
     $this->addCss('/plugins/piratmac/idfm/assets/css/idfm.css');
-    $this->displayTimezone = (!is_null(BackendAuth::getUser()->timezone))?BackendAuth::getUser()->timezone:((!is_null(Settings::get('defaultTimezone')))?Settings::get('defaultTimezone'):Config::get('app.timezone'));
+    if (!is_null(BackendAuth::getUser())) {
+      if (!is_null(BackendAuth::getUser()->timezone))
+        $this->displayTimezone = BackendAuth::getUser()->timezone;
+    }
+    elseif (!is_null(IDFMSettings::get('defaultTimezone')))
+      $this->displayTimezone = IDFMSettings::get('defaultTimezone');
+    elseif (!is_null($this->displayTimezone = Config::get('app.timezone')))
+      $this->displayTimezone = Config::get('app.timezone');
+    else $this->displayTimezone = 'UTC';
 
     $this->monitored_stops = MonitoredStop::with([
       'visits' => function ($query) {

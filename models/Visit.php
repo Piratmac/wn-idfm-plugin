@@ -22,7 +22,7 @@ class Visit extends Model
     ];
 
     public $timezonable = [
-      'record_time','departure_time'
+      'record_time', 'departure_time'
     ];
 
     /**

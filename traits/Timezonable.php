@@ -33,18 +33,19 @@ trait Timezonable
      */
     public function getTime($timestamp, UserExtended $user = null)
     {
-        $user = BackendAuth::getUser();
-        $timezone = $user->timezone;
+      if (!is_null(BackendAuth::getUser())) {
+        if (!is_null(BackendAuth::getUser()->timezone))
+          $timezone = BackendAuth::getUser()->timezone;
+      }
+      elseif (!is_null(Settings::get('defaultTimezone')))
+        $timezone = Settings::get('defaultTimezone');
+      elseif (!is_null($timezone = Config::get('app.timezone')))
+        $timezone = Config::get('app.timezone');
+      else $timezone = 'UTC';
 
-        if($timezone == null) {
-          $timezone = Settings::get('defaultTimezone');
-          if (is_null($timezone))
-            $timezone = Config::get('app.timezone');
-        }
+      $timestamp = new Carbon($timestamp);
 
-        $timestamp = new Carbon($timestamp);
-
-        return $timestamp->tz($timezone);
+      return $timestamp->tz($timezone);
     }
 
     /**
