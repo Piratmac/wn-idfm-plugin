@@ -59,6 +59,7 @@
         'display_past_x_minutes' => 'Display the visits from last X minutes',
         'displayErrorsForXHours' => 'Display error messages for X hours',
         'displayErrorsForXHours_comment' => 'Applies for technical errors (= script failure) or in case of specific conditions (strikes, ...)',
+        'defaultTimezone' => 'Default display timezone',
     ],
     'import_lines' => [
         'lines_source' => 'The CSV should come from the referential <a href="https://opendata.stif.info/explore/dataset/referentiel-des-lignes-stif/">Référentiel des lignes de transport en commun d&apos;Ile-de-France</a>',

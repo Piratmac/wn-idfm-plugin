@@ -21,7 +21,7 @@
             {{ visit.destination.name }}
           </td>
           <td>
-            {{ visit.error_message == '' ? visit.departure_time|date('H:i') : visit.error_message }}
+            {{ visit.error_message == '' ? visit.departure_time|date('H:i', __SELF__.displayTimezone) : '(' ~ visit.record_time|date('H:i', __SELF__.displayTimezone) ~ ') ' ~ visit.error_message }}
             {{ visit.error_message == '' ? '(' ~ visit.departure_time|time_since_short() ~ ')' : '' }}
           </td>
         </tr>

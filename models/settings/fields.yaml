@@ -31,3 +31,8 @@ fields:
         default: 24
         type: number
         comment: 'piratmac.idfm::lang.settings.displayErrorsForXHours_comment'
+    defaultTimezone:
+        label: 'piratmac.idfm::lang.settings.defaultTimezone'
+        span: auto
+        type: dropdown
+

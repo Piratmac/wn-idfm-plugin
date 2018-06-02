@@ -59,6 +59,7 @@
         'display_past_x_minutes' => 'Afficher les visites des X dernières minutes',
         'displayErrorsForXHours' => 'Afficher les erreurs pendant X heures',
         'displayErrorsForXHours_comment' => 'Applicable en cas d\'erreurs techniques (script) ou conditions spéciales (grèves, ...)',
+        'defaultTimezone' => 'Fuseau horaire par défaut',
     ],
     'import_lines' => [
         'lines_source' => 'Le CSV est disponible dans le référentiel <a href="https://opendata.stif.info/explore/dataset/referentiel-des-lignes-stif/">Référentiel des lignes de transport en commun d\'Ile-de-France</a>',

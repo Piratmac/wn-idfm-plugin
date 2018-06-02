@@ -4,6 +4,7 @@ use Carbon\Carbon;
 use BackendAuth;
 use Exception;
 use Config;
+use Piratmac\Idfm\Models\Settings;
 
 /**
  * This file is heavily based on the work from Shawn Clake (see below for full reference).
@@ -35,8 +36,11 @@ trait Timezonable
         $user = BackendAuth::getUser();
         $timezone = $user->timezone;
 
-        if($timezone == null)
+        if($timezone == null) {
+          $timezone = Settings::get('defaultTimezone');
+          if (is_null($timezone))
             $timezone = Config::get('app.timezone');
+        }
 
         $timestamp = new Carbon($timestamp);
 

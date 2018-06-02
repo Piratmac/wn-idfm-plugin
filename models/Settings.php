@@ -24,13 +24,16 @@ class Settings extends Model
 
   public function afterValidate()
   {
-    \Debugbar::info(input('displayPastXMinutes'));
-    \Debugbar::info(is_numeric(input('displayPastXMinutes')));
-    if (!is_numeric(input('displayPastXMinutes')) ) {
-      throw new \ValidationException(['displayPastXMinutes' => \Lang::get('system::validation.numeric', ['attribute' => \Lang::get('piratmac.idfm::lang.settings.display_past_x_minutes')])]);
+    if (!is_numeric(input('Settings.displayPastXMinutes')) ) {
+      throw new \ValidationException(['Settings.displayPastXMinutes' => \Lang::get('system::validation.numeric', ['attribute' => \Lang::get('piratmac.idfm::lang.settings.display_past_x_minutes')])]);
     }
-    if (!is_numeric(input('displayErrorsForXHours')) ) {
-      throw new \ValidationException(['displayErrorsForXHours' => \Lang::get('system::validation.numeric', ['attribute' => \Lang::get('piratmac.idfm::lang.settings.displayErrorsForXHours')])]);
+    if (!is_numeric(input('Settings.displayErrorsForXHours')) ) {
+      throw new \ValidationException(['Settings.displayErrorsForXHours' => \Lang::get('system::validation.numeric', ['attribute' => \Lang::get('piratmac.idfm::lang.settings.displayErrorsForXHours')])]);
     }
+  }
+
+  public function getDefaultTimezoneOptions () {
+    $preference = new \Backend\Models\Preference();
+    return $preference->getTimezoneOptions();
   }
 }
