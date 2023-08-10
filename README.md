@@ -1,5 +1,5 @@
 # IDFM
-The purpose of this [OctoberCMS](http://octobercms.com) plugin is to display a simple page with the next visits to your favorite transportation stops in France's Paris region. The data is taken from the platform IDFM (Ile-de-France Mobilités).
+The purpose of this [WinterCMS](http://wintercms.com) plugin is to display a simple page with the next visits to your favorite transportation stops in France's Paris region. The data is taken from the platform IDFM (Ile-de-France Mobilités).
 
 ## This is BETA software
 This plugin is under development. There are a lot of glitches, elements I wish to add or improvements to be made.
